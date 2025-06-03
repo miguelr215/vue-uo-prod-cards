@@ -1,8 +1,24 @@
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import UOHeader from '@/components/UOHeader.vue';
-import FlipCard from '@/components/FlipCard.vue';
+import FlipCards from '@/components/FlipCards.vue';
 import ProductsShowcase from '@/components/ProductsShowcase.vue';
+
+const products = ref([]);
+
+onMounted(() => {
+	async function getProducts() {
+		try {
+			const res = await fetch('products.json');
+			const data = await res.json();
+			products.value = data;
+		} catch (error) {
+			console.log(`error: ${error}`);
+		}
+	}
+
+	getProducts();
+});
 </script>
 
 <template>
@@ -16,7 +32,7 @@ import ProductsShowcase from '@/components/ProductsShowcase.vue';
 			<li>Accessible and Responsive</li>
 		</ul>
 
-		<FlipCard />
+		<FlipCards :products="products" />
 
 		<!-- <ProductsShowcase /> -->
 	</main>
