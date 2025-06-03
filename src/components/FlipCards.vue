@@ -8,7 +8,8 @@ const props = defineProps({
 
 <template>
 	<section>
-		<h2>Flip Cards</h2>
+		<h2>Hotspot Flip Cards</h2>
+		<p>Click a hotspot to reveal product details</p>
 
 		<div class="flip-container" v-if="products.length">
 			<FlipCard

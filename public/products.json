@@ -390,11 +390,8 @@
 					"hotspot": {
 						"id": 3,
 						"style": {
-							"bottom": "7px",
-							"left": "35%",
-							"width": "120px",
-							"height": "30px",
-							"borderRadius": 0
+							"bottom": "3px",
+							"left": "54%"
 						}
 					}
 				}
@@ -1387,10 +1384,10 @@
 					"hotspot": {
 						"id": 1,
 						"style": {
-							"top": "21px",
-							"left": "130px",
-							"width": "60px",
-							"height": "60px"
+							"top": "43px",
+							"left": "131px",
+							"width": "20px",
+							"height": "20px"
 						}
 					}
 				},
@@ -1436,11 +1433,10 @@
 					"hotspot": {
 						"id": 3,
 						"style": {
-							"bottom": "3px",
-							"left": "107px",
-							"width": "80px",
-							"height": "55px",
-							"borderRadius": 0
+							"bottom": "1px",
+							"left": "116px",
+							"width": "65px",
+							"height": "65px"
 						}
 					}
 				}
