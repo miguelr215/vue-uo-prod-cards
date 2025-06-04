@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import UOHeader from '@/components/UOHeader.vue';
+import HoverFlipCards from '@/components/HoverFlipCards.vue';
 import FlipCards from '@/components/FlipCards.vue';
 import ProductsShowcase from '@/components/ProductsShowcase.vue';
 
@@ -24,13 +25,14 @@ onMounted(() => {
 <template>
 	<UOHeader />
 	<main>
-		<h1>Flip Card & Products Showcase</h1>
+		<h1>Product Card Animations</h1>
 		<ul>
 			<li>Developed with Vue &amp; Vite</li>
-			<li>3 clickable "hot spots" show product details from image</li>
-			<li>Reusable component</li>
+			<li>Flexible &amp; Reusable components</li>
 			<li>Accessible and Responsive</li>
 		</ul>
+
+		<HoverFlipCards :products="products" />
 
 		<FlipCards :products="products" />
 
@@ -46,7 +48,7 @@ main h1 {
 	text-align: center;
 }
 main ul {
-	width: 60%;
+	width: fit-content;
 	margin: 1rem auto;
 }
 @media (min-width: 768px) {
@@ -58,11 +60,8 @@ main ul {
 	main ul {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
-		gap: 1rem;
-	}
-	main li {
-		max-width: 23%;
+		justify-content: center;
+		gap: 3rem;
 	}
 }
 </style>

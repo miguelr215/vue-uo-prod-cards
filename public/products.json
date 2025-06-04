@@ -3,6 +3,7 @@
 		"@context": "https://schema.org",
 		"@type": "Product",
 		"name": "BDG Eva Tie-Front Ruched Strap Trapeze Mini Dress",
+		"path": "https://www.urbanoutfitters.com/search?q=BDG+Eva+Tie-Front+Ruched+Strap+Trapeze+Mini+Dress",
 		"image": [
 			"https://images.urbndata.com/is/image/UrbanOutfitters/99180069_049_b?$xlarge$&fit=constrain&qlt=80&wid=640",
 			"https://images.urbndata.com/is/image/UrbanOutfitters/99180069_049_b2?$xlarge$&fit=constrain&qlt=80&wid=640",
@@ -402,6 +403,7 @@
 		"@context": "https://schema.org",
 		"@type": "Product",
 		"name": "UO Samara Mesh Strapless Midi Dress",
+		"path": "https://www.urbanoutfitters.com/shop/uo-samara-mesh-strapless-midi-dress?category=dresses&color=260&type=REGULAR&quantity=1",
 		"image": [
 			"https://images.urbndata.com/is/image/UrbanOutfitters/76010537_260_b?$xlarge$&fit=constrain&qlt=80&wid=640",
 			"https://images.urbndata.com/is/image/UrbanOutfitters/76010537_260_d?$xlarge$&fit=constrain&qlt=80&wid=640",
@@ -1282,6 +1284,7 @@
 		"@context": "https://schema.org",
 		"@type": "Product",
 		"name": "UO Cypress Textured Halter Top & Mini Skirt Set",
+		"path": "https://www.urbanoutfitters.com/shop/uo-cypress-textured-halter-top-and-mini-skirt-set?category=SEARCHRESULTS&color=001&searchparams=q=Cypress%2520Textured%2520Halter%2520Top%2520%2526%2520Mini%2520Skirt%2520Set&type=REGULAR&quantity=1",
 		"image": [
 			"https://images.urbndata.com/is/image/UrbanOutfitters/100659465_001_b?$xlarge$&fit=constrain&qlt=80&wid=640",
 			"https://images.urbndata.com/is/image/UrbanOutfitters/100659465_001_b2?$xlarge$&fit=constrain&qlt=80&wid=640",
