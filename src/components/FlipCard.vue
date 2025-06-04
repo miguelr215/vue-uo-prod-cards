@@ -179,7 +179,4 @@ function handleClick(hotspot) {
 	border: 1px solid #ed7513;
 	animation: none;
 }
-
-@media (max-width: 350px) {
-}
 </style>
