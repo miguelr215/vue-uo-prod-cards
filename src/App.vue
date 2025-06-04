@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue';
 import UOHeader from '@/components/UOHeader.vue';
 import HoverFlipCards from '@/components/HoverFlipCards.vue';
 import FlipCards from '@/components/FlipCards.vue';
-import ProductsShowcase from '@/components/ProductsShowcase.vue';
+import ZoomCards from '@/components/ZoomCards.vue';
 
 const products = ref([]);
 
@@ -36,7 +36,7 @@ onMounted(() => {
 
 		<FlipCards :products="products" />
 
-		<!-- <ProductsShowcase /> -->
+		<ZoomCards :products="products" />
 	</main>
 </template>
 
