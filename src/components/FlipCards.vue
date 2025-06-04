@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
 	<section>
 		<h2>Hotspot Flip Cards</h2>
-		<p>Click a hotspot to reveal product details</p>
+		<p class="subtitle">Click a hotspot to reveal product details</p>
 
 		<div class="flip-container" v-if="products.length">
 			<FlipCard
@@ -26,7 +26,15 @@ const props = defineProps({
 section {
 	margin: 2rem 0;
 }
+h2,
+.subtitle {
+	text-align: center;
+}
 @media (min-width: 992px) {
+	h2,
+	.subtitle {
+		text-align: left;
+	}
 	.flip-container {
 		margin: 3rem 0;
 		display: flex;
