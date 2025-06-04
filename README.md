@@ -1,5 +1,7 @@
 # vue-uo-products-showcase
 
+:arrow_right: View the [Product Cards Animations page](https://miguelr215.github.io/vue-uo-prod-cards/)
+
 -   Created using Vue & Vite
 -   3 product card animations
     -   Hover Flip Card
