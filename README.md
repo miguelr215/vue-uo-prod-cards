@@ -1,6 +1,9 @@
 # vue-uo-products-showcase
 
 -   3 product card animations
+    -   Hover Flip Card
+    -   Hotspot Flip Card
+    -   Zoom Card
 -   Flexible & Reusable components
 -   (Tab/Keyboard) Accessible
 -   Mobile Responsive
