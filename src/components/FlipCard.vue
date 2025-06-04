@@ -24,24 +24,39 @@ function handleClick(hotspot) {
 </script>
 
 <template>
-	<div class="flip-card" :class="{ flipped: isFlipped }">
+	<div
+		class="flip-card"
+		:class="{ flipped: isFlipped }"
+		role="article"
+		aria-label="Flip Card"
+		:aria-expanded="isFlipped"
+	>
 		<div class="card-face card-front">
 			<img :src="product.image[0]" :alt="product.name" />
 
 			<div
 				class="hotspot hs1"
 				@click="handleClick(1)"
+				@keyup.enter="handleClick(1)"
 				:style="product.associatedProducts.products[0].hotspot.style"
+				aria-label="Product Hotspot 1"
+				tabindex="0"
 			></div>
 			<div
 				class="hotspot hs2"
 				@click="handleClick(2)"
+				@keyup.enter="handleClick(2)"
 				:style="product.associatedProducts.products[1].hotspot.style"
+				aria-label="Product Hotspot 2"
+				tabindex="0"
 			></div>
 			<div
 				class="hotspot hs3"
 				@click="handleClick(3)"
+				@keyup.enter="handleClick(3)"
 				:style="product.associatedProducts.products[2].hotspot.style"
+				aria-label="Product Hotspot 3"
+				tabindex="0"
 			></div>
 		</div>
 

@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
+import SkipToContent from './components/SkipToContent.vue';
 import UOHeader from '@/components/UOHeader.vue';
 import HoverFlipCards from '@/components/HoverFlipCards.vue';
 import FlipCards from '@/components/FlipCards.vue';
@@ -23,13 +24,14 @@ onMounted(() => {
 </script>
 
 <template>
+	<!-- <SkipToContent /> -->
 	<UOHeader />
-	<main>
+	<main id="content">
 		<h1>Product Card Animations</h1>
 		<ul>
-			<li>Developed with Vue &amp; Vite</li>
+			<li>Developed with Vue 3 &amp; Vite</li>
 			<li>Flexible &amp; Reusable components</li>
-			<li>Accessible and Responsive</li>
+			<li>Accessible and Mobile Responsive</li>
 		</ul>
 
 		<HoverFlipCards :products="products" />
@@ -57,6 +59,9 @@ main ul {
 	}
 }
 @media (min-width: 992px) {
+	main {
+		padding-bottom: 3rem;
+	}
 	main ul {
 		width: 100%;
 		display: flex;

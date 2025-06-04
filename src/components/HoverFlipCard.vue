@@ -18,6 +18,11 @@ function toggleFlipped() {
 		:class="{ flipped: isFlipped }"
 		@mouseenter="toggleFlipped"
 		@mouseleave="toggleFlipped"
+		@keyup.enter="toggleFlipped"
+		role="article"
+		aria-label="Hover Flip Card"
+		:aria-expanded="isFlipped"
+		tabindex="0"
 	>
 		<div class="card-face card-front">
 			<img :src="product.image[0]" :alt="product.name" />

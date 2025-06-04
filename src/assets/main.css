@@ -5,3 +5,22 @@
 	margin: 0 auto;
 	font-weight: normal;
 }
+
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+	position: absolute;
+}
+a:-webkit-any-link:focus-visible {
+	outline-offset: 1px;
+	cursor: pointer;
+}
+:focus-visible {
+	outline: -webkit-focus-ring-color auto 1px;
+}

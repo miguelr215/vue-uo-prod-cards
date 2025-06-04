@@ -18,6 +18,9 @@ function toggleHovered() {
 		:class="{ hovered: isHovered }"
 		@mouseenter="toggleHovered"
 		@mouseleave="toggleHovered"
+		@keyup.enter="toggleHovered"
+		aria-label="Hover Zoom Card"
+		tabindex="0"
 	>
 		<h3 class="prod-brand">{{ product.brand.name }}</h3>
 		<img :src="product.image[0]" :alt="product.name" class="prod-img" />
@@ -55,17 +58,21 @@ function toggleHovered() {
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	overflow: hidden;
 }
-.zoom-card:hover {
+.zoom-card:hover,
+.zoom-card.hovered {
 	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.27);
 }
-.zoom-card:hover img {
+.zoom-card:hover img,
+.zoom-card.hovered img {
 	transform: scale(1.15);
 }
-.zoom-card:hover .prod-brand {
+.zoom-card:hover .prod-brand,
+.zoom-card.hovered .prod-brand {
 	opacity: 0;
 	transform: scale(0.65);
 }
-.zoom-card:hover figcaption {
+.zoom-card:hover figcaption,
+.zoom-card.hovered figcaption {
 	bottom: 0;
 }
 .prod-brand {
