@@ -1,5 +1,6 @@
 # vue-uo-products-showcase
 
+-   Created using Vue & Vite
 -   3 product card animations
     -   Hover Flip Card
     -   Hotspot Flip Card
